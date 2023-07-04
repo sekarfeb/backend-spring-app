@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp_backend-pod
+  name: myapp-backend-pod
   labels:
     app: myapp
 spec:
