@@ -1,4 +1,5 @@
 FROM openjdk:17
-ADD target/employeemanagmentbackend-0.0.1-SNAPSHOT.jar employeemanagment.jar
+WORKDIR /app
+COPY target/employeemanagmentbackend-0.0.1-SNAPSHOT.jar.jar app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "employeemanagment.jar"]
+CMD ["java", "-jar", "app.jar"]
