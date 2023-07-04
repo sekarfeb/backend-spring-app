@@ -17,7 +17,7 @@ spec:
         - name: app
           image: sekarfeb/employee_backend:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
 ---
 # service.yaml
 apiVersion: v1
@@ -29,7 +29,7 @@ spec:
     app: backend-app 
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8081
+      targetPort: 8081
   type: LoadBalancer # Use the appropriate service type for your environment
 
